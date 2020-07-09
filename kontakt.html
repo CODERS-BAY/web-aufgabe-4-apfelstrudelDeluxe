@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="at-de">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" type="text/css" href="styles.css">
+      <title>Kontakt - Der Linzer Zoo</title>
+      <meta name="Kontakt - Der Linzer Zoo" content="Kontaktinfos zum Linzer Zoo am Pöstlingberg.">
+      <meta name=”robots” content=”noindex, nofollow”>
+      <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+      <link rel="apple-touch-icon" sizes="57x57" href="images/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="images/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="images/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="images/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="images/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="images/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="images/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="images/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="images/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="images/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+        <link rel="manifest" href="images/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="images/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+   </head>
+</html>
+
+   <body>
+
+      <header>
+         <nav>
+             <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="infos.html">Infos</a></li>
+                 <li><a href="kontakt.html" class="aktuell">Kontakt</a></li>
+             </ul>
+         </nav>
+         <div class="headerImageKontakt">
+             <div class="headerText">
+                <h1>Kontakt</h1>
+            </div>
+         </div>
+         
+      </header>
+
+      <main>
+         <article>
+            <h2>Wie hat es dir gefallen?</h2>
+         </article>
+
+         <article>
+            <section>
+               <p class="contactFormInfo">Formular ausfüllen und bei Verlosung teilnehmen. Zu gewinnen gibt es eine Sonderführung inklusive Fütterung der Erdmännchen im Zoo!</p>
+            </section>
+         </article>
+
+         <article>
+            <section>
+               <forms method="GET" action="ausgabe.html">
+                  <fieldset>
+                     <legend>Generelle Infos zu deinem Besuch</legend>
+                     <div>
+                        <label for="besucherinfo">Mit wen hast du uns besucht?</label>
+                        <select id="besucherinfo" name="besucherinfo">
+                           <option value="familienausflug">Familienausflug</option>
+                           <option value="alleinUnterwegs">Allein Unterwegs</option>
+                           <option value="gruppenausflug" selected>Gruppenausflug</option>
+                           <option value="ausflugMitFreunden">Ausflug mit Freunden</option>
+                           <option value="wasAnderes">Was anderes</option>
+                        </select>
+                     </div>
+                     <div>
+                        <label for="date">An welchem Tag warst du im Zoo?</label>
+                        <input id="date" type="date" name="date" value="date" min="2018-01-01" max="date">
+                     </div>
+                     <div>
+                        <p>Wie lange warst du bei uns?</p>
+                        <label for="timeFrom">Von</label>
+                        <input id="timeFrom" type="time" name="timeFrom" value="time" min="09:00" max="18:00">
+                        <label for="timeTo">Bis</label>
+                        <input id="timeTo" type="time" name="timeTo" value="time" min="09:00" max="18:00">
+                     </div>
+                  </fieldset>
+
+                  <fieldset>
+                     <legend>Wie hat dir dein Besuch im Linzer Zoo gefallen?</legend>
+                     <div>
+                        <label for="aminals">Welche Tierart hat die am Besten gefallen?*</label>
+                        <input id="animals" type="text" list="animalList" name="animals" required>
+                        <datalist id="animalList">
+                           <option value="Schimpanse">
+                           <option value="Goldfisch">
+                           <option value="Ponny">
+                           <option value="Schlange">
+                        </datalist>
+                     </div>
+                     <div>
+                        <p>Vergib eine Schulnote dafür, wie sehr es dir im Zoo gefallen hat.</p>
+                        <div class="formLike">
+                           <label for="1">Sehr gut</label>
+                           <input id="1" type="radio" name="like" value="1">
+                           <br>
+                           <label for="2">Gut</label>
+                           <input id="2" type="radio" name="like" value="1">
+                           <br>
+                           <label for="3">Befriedigend</label>
+                           <input id="3" type="radio" name="like" value="1">
+                           <br>
+                           <label for="4">Genügend</label>
+                           <input id="4" type="radio" name="like" value="1">
+                           <br>
+                           <label for="5">Nicht genügend</label>
+                           <input id="5" type="radio" name="like" value="1">
+                     </div>
+                     </div>
+                      <div>
+                        <p>Würdest du uns weiterempfehlen?</p>
+                        <label for="yes">ja</label>
+                        <input id="yes" type="radio" name="recc" value="recc">
+                        <br>
+                        <label for="no">nein</label>
+                        <input id="no" type="radio" name="recc" value="recc">
+                     </div>
+                     <div>
+                        <label for="comment">Möchtest du uns noch etwas mitteilen?</label>
+                        <textarea id="comment" name="comment" rows="5" cols="20"></textarea>
+                    </div>
+                  </fieldset>
+                  <fieldset>
+                     <legend>Noch ein paar Angaben zu dir</legend>
+                     <div>
+                        <div>
+                           <label for="name">Dein Vor- und Nachname</label>
+                           <input id="name" type="text" name="name" value="" placeholder="Wie weißt du?">
+                       </div>
+       
+                       <div>
+                           <label for="email">Deine E-Mail Adresse</label>
+                           <input id="email" type="email" name="email" value="" placeholder="Deine Mailadresse">
+                       </div>
+                       <div class="buttonSubmit">
+                           <button type="submit">Absenden</button>
+                       </div>
+                  </fieldset>
+
+                  
+                  <p>*Pflichtfelder</p>
+                  <button class="buttonReset" type="reset">Formular löschen</button>
+
+               </forms>
+            </section>
+         </article>
+
+         
+      </main>
+
+      <footer>
+        <p>&copy;Der Linzer Zoo 2020</p>
+    </footer>
+
+   </body>
+
+</html>

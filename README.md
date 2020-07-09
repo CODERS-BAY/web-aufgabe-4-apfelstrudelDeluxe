@@ -26,19 +26,20 @@ Auf dieser Seite soll es ein Formular geben.<br>
 Felder die Abgefragt werden (achte auf die Validierung):
 1. Name
 2. Mailadresse
-3. Besuchstag *(date)*
-4. Besuchszeit *(time)*
-5. Hat es gefallen *(range)*
-6. Weiterempfehlung *(ja/nein)*
-7. Welche Tierart hat am besten gefallen *(datalist)*
-8. Kommentar *(textarea)*
-9. Besucherinfo *(Auswahlliste)*
-    * Familienausflug
-    * Allein unterwegs
-    * Gruppenausflug
-    * Ausflug mit Freunden
-    * was anderes
+    3. Besuchstag *(date)*
+    4. Besuchszeit *(time)*
+    5. Hat es gefallen *(range)*
+    6. Weiterempfehlung *(ja/nein)*
+    7. Welche Tierart hat am besten gefallen *(datalist)*
+    8. Kommentar *(textarea)*
+    9. Besucherinfo *(Auswahlliste)*
+        * Familienausflug
+        * Allein unterwegs
+        * Gruppenausflug
+        * Ausflug mit Freunden
+        * was anderes
 10. Absendebutton und Resetbutton
+
 
 
 #### Allgemein
