@@ -273,6 +273,8 @@ legend {
     font-weight: bold;
 }
 
+
+
 .buttonReset {
     background-color: lightgray;
     color: black;
@@ -297,4 +299,13 @@ legend {
 
 .formLike {
     display: flex;
+}
+
+textarea {
+    width: 100%;
+}
+
+fieldset {
+    background-color:white;
+    border: 3px solid #DF3B57;
 }
