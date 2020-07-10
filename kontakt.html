@@ -60,11 +60,11 @@
          <article>
             <section>
                <forms method="GET" action="ausgabe.html">
+                  <legend>Generelle Infos zu deinem Besuch</legend>
                   <fieldset>
-                     <legend>Generelle Infos zu deinem Besuch</legend>
-                     <div>
-                        <label for="besucherinfo">Mit wen hast du uns besucht?</label>
-                        <select id="besucherinfo" name="besucherinfo">
+                     <div class="form">
+                        <label class="formLabel" for="besucherinfo">Mit wen hast du uns besucht?</label>
+                        <select class="formLabel" id="besucherinfo" name="besucherinfo">
                            <option value="familienausflug">Familienausflug</option>
                            <option value="alleinUnterwegs">Allein Unterwegs</option>
                            <option value="gruppenausflug" selected>Gruppenausflug</option>
@@ -72,24 +72,27 @@
                            <option value="wasAnderes">Was anderes</option>
                         </select>
                      </div>
-                     <div>
-                        <label for="date">An welchem Tag warst du im Zoo?</label>
-                        <input id="date" type="date" name="date" value="date" min="2018-01-01" max="date">
+                     <div class="form">
+                        <label class="formLabel" for="date">An welchem Tag warst du im Zoo?</label>
+                        <input  class="formLabel" id="date" type="date" name="date" value="date" min="2018-01-01" max="date">
                      </div>
-                     <div>
-                        <p>Wie lange warst du bei uns?</p>
-                        <label for="timeFrom">Von</label>
-                        <input id="timeFrom" type="time" name="timeFrom" value="time" min="09:00" max="18:00">
-                        <label for="timeTo">Bis</label>
-                        <input id="timeTo" type="time" name="timeTo" value="time" min="09:00" max="18:00">
+                     
+                     <div class="form">
+                        <p class="formLabel">Wie lange warst du bei uns?</p>
+                        <div class="formLabel form3">
+                           <label class="formLabel" for="timeFrom">Von</label>
+                           <input class="formLabel" id="timeFrom" type="time" name="timeFrom" value="time" min="09:00" max="18:00">
+                           <label class="formLabel" for="timeTo">Bis</label>
+                           <input class="formLabel" id="timeTo" type="time" name="timeTo" value="time" min="09:00" max="18:00">
+                        </div>
                      </div>
                   </fieldset>
-
+                  
+                  <legend>Wie hat dir dein Besuch im Linzer Zoo gefallen?</legend>
                   <fieldset>
-                     <legend>Wie hat dir dein Besuch im Linzer Zoo gefallen?</legend>
-                     <div>
-                        <label for="aminals">Welche Tierart hat die am Besten gefallen?*</label>
-                        <input id="animals" type="text" list="animalList" name="animals" required>
+                     <div class="form">
+                        <label class="formLabel" for="aminals">Welche Tierart hat die am Besten gefallen?*</label>
+                        <input class="formLabel" id="animals" type="text" list="animalList" name="animals" required>
                         <datalist id="animalList">
                            <option value="Schimpanse">
                            <option value="Goldfisch">
@@ -97,49 +100,51 @@
                            <option value="Schlange">
                         </datalist>
                      </div>
-                     <div>
-                        <p>Vergib eine Schulnote dafür, wie sehr es dir im Zoo gefallen hat.</p>
-                        <div class="formLike">
-                           <label for="1">Sehr gut</label>
-                           <input id="1" type="radio" name="like" value="1">
+                     <div class="form">                       
+                        <p class="formLabel">Vergib eine Schulnote dafür, wie sehr es dir im Zoo gefallen hat.</p>
+                        <div class="formLike formLabel form2">
+                           <label class="formLabel" for="1">Sehr gut</label>
+                           <input class="formLabel" id="1" type="radio" name="like" value="1">
                            <br>
-                           <label for="2">Gut</label>
-                           <input id="2" type="radio" name="like" value="1">
+                           <label class="formLabel" for="2">Gut</label>
+                           <input class="formLabel" id="2" type="radio" name="like" value="1">
                            <br>
-                           <label for="3">Befriedigend</label>
-                           <input id="3" type="radio" name="like" value="1">
+                           <label class="formLabel" for="3">Befriedigend</label>
+                           <input class="formLabel" id="3" type="radio" name="like" value="1">
                            <br>
-                           <label for="4">Genügend</label>
-                           <input id="4" type="radio" name="like" value="1">
+                           <label class="formLabel" for="4">Genügend</label>
+                           <input class="formLabel" id="4" type="radio" name="like" value="1">
                            <br>
-                           <label for="5">Nicht genügend</label>
-                           <input id="5" type="radio" name="like" value="1">
+                           <label class="formLabel" for="5">Nicht genügend</label>
+                           <input class="formLabel" id="5" type="radio" name="like" value="1">
                      </div>
                      </div>
-                      <div>
-                        <p>Würdest du uns weiterempfehlen?</p>
-                        <label for="yes">ja</label>
-                        <input id="yes" type="radio" name="recc" value="recc">
-                        <br>
-                        <label for="no">nein</label>
-                        <input id="no" type="radio" name="recc" value="recc">
+                      <div class="form">
+                        <p class="formLabel">Würdest du uns weiterempfehlen?</p>
+                        <div class="form3">
+                           <label class="formLabel" for="yes">ja</label>
+                           <input class="formLabel" id="yes" type="radio" name="recc" value="recc">
+                           <br>
+                           <label class="formLabel" for="no">nein</label>
+                           <input class="formLabel" id="no" type="radio" name="recc" value="recc">
+                        </div>
                      </div>
-                     <div>
-                        <label for="comment">Möchtest du uns noch etwas mitteilen?</label>
-                        <textarea id="comment" name="comment" rows="5" cols="20"></textarea>
+                     <div class="form">
+                        <label class="formLabel" for="comment">Möchtest du uns noch etwas mitteilen?</label>
+                        <textarea class="formLabel" id="comment" name="comment" rows="5" cols="20"></textarea>
                     </div>
                   </fieldset>
+                  <legend>Noch ein paar Angaben zu dir</legend>
                   <fieldset>
-                     <legend>Noch ein paar Angaben zu dir</legend>
                      <div>
-                        <div>
-                           <label for="name">Dein Vor- und Nachname</label>
-                           <input id="name" type="text" name="name" value="" placeholder="Wie weißt du?">
+                        <div class="form">
+                           <label class="formLabel" for="name">Dein Vor- und Nachname</label>
+                           <input class="formLabel" id="name" type="text" name="name" value="" placeholder="Wie weißt du?">
                        </div>
        
-                       <div>
-                           <label for="email">Deine E-Mail Adresse</label>
-                           <input id="email" type="email" name="email" value="" placeholder="Deine Mailadresse">
+                       <div class="form">
+                           <label class="formLabel" for="email">Deine E-Mail Adresse</label>
+                           <input class="formLabel" id="email" type="email" name="email" value="" placeholder="Deine Mailadresse">
                        </div>
                        
                   </fieldset>

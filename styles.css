@@ -189,11 +189,26 @@ dt {
     text-align: center;
 }
 
-iframe {
-    border: 3px solid #DF3B57;
-    max-width:auto;
+.embedContainer {   /* responsive iframe! */
+    position: relative;
+    width: calc(75vh * 1.77);
+    height: 75vh;
+    /*
+    width: 100%;
+    height: 0;
+    padding-bottom: 175%;
+    */
 }
 
+.embed-container iframe {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%;
+  }
+
+  
 img {
     max-width: 80%;
     height: auto;
@@ -271,6 +286,7 @@ legend {
     padding: 2rem;
     margin: 0;
     font-weight: bold;
+    text-align: center;
 }
 
 
@@ -308,4 +324,39 @@ textarea {
 fieldset {
     background-color:white;
     border: 3px solid #DF3B57;
+    margin-left: 10%;
+    margin-right: 10%;
 }
+
+.form {
+    display: flex;
+    margin: 1rem;    
+}
+
+.form2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form3 {
+    display: flex;
+}
+
+.formLabel {
+    flex-basis: 50%;
+    padding: 0.3rem;
+    margin: 0.3rem;
+}
+
+.buttonSubmit {
+    text-align: center;
+}
+
+/* 
+.formSelect {
+    background-color: lightgrey;
+    flex-basis: 50%;
+    padding: 1rem;
+    margin: 1rem;
+}
+ */
